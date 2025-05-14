@@ -1,5 +1,5 @@
 manifestVersion: subsquid.io/v0.1
-name: subsquid-xode-asset
+name: subsquid-polkadot-xode
 version: 1
 description: Substrate squid template
 build: 
