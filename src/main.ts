@@ -59,7 +59,7 @@ interface AssetTransferEvent {
 
 function getTransferEvents(ctx: ProcessorContext<Store>): TransferEvent[] {
     let transfers: TransferEvent[] = [];
-    const ss58Codec = ss58.codec(42); // Replace 42 with your chain's SS58 prefix.
+    const ss58Codec = ss58.codec(280); // Replace 42 with your chain's SS58 prefix.
 
     for (let block of ctx.blocks) {
         for (let event of block.events) {
@@ -96,7 +96,7 @@ function getTransferEvents(ctx: ProcessorContext<Store>): TransferEvent[] {
 
 function getAssetTransferEvents(ctx: ProcessorContext<Store>): AssetTransferEvent[] {
     let assetTransfers: AssetTransferEvent[] = [];
-    const ss58Codec = ss58.codec(42); // Replace 42 with your chain's SS58 prefix.
+    const ss58Codec = ss58.codec(280); // Replace 42 with your chain's SS58 prefix.
 
     for (let block of ctx.blocks) {
         for (let event of block.events) {
